@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import { ROUTES } from "./routes";
 import {
   FriendsPage,
@@ -10,7 +10,7 @@ import {
 import MailPage from "../pages/MailPage";
 import NotificationPage from "../pages/NotificationPage";
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: ROUTES.index,
     element: <Layout />,
